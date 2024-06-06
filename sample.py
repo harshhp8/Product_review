@@ -356,7 +356,7 @@ if query:
                     sky1234
                     sky1935
                     '''
-            client = OpenAI(api_key='sk-proj-Jwb75cA0ToYsqpV2DWU7T3BlbkFJ3UOkbFALzDcqKKirpxiS')
+            client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
             # Send the prompt to the OpenAI API and get the response
             response = client.chat.completions.create(
                 model="gpt-4o",
